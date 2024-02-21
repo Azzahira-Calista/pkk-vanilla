@@ -21,6 +21,10 @@ body{
   overflow: hidden;
 }
 
+h2 {
+  margin-bottom: 105px;
+}
+
 .container img{
   position: absolute;
   width: 100%;
@@ -30,9 +34,9 @@ body{
   object-fit: contain;
 }
 
-.container h2{
+.container{
   z-index: 1;
-  position: relative;
+  position: absolute;
   color: #fff;
   font-size: 90px;
   text-transform: uppercase;
@@ -86,6 +90,6 @@ background-color:transparent;
 
 .btn-index{
   position: relative;
-  z-index: 99999;
-  
+  z-index: 2;
+  margin-top: 50px;
 }
