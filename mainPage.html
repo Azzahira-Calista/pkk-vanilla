@@ -1,67 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main page</title>
-    <link rel="stylesheet" href="mainPage.css">
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-</head>
-<body>
-    <div class="navbar"></div>
-    <div class="container">
-        <!-- <button class="topRight">?</button> -->
-        <div class="text">
-            <h1>Bumi</h1>
-            <hr>
-            <p>Planet Bumi adalah planet terdekat ketiga dengan Matahari dan salah satu dari delapan planet yang membentuk Tata Surya, di galaksi yang dikenal sebagai Bima Sakti. Agar kehidupan di planet Bumi dimungkinkan, ada beberapa kondisi yang diperlukan seperti adanya atmosfer dan air dalam bentuk cair.</p>
-            <div >
-                <button class="btn-main">Belajar</button>
-                <button class="btn-main">Quiz</button>
-            </div>
-        </div>
-        
-        <img src="earth.png" class="earth"  alt="">
-    </div>
-    <div class="umum">
-        <p class="card-umum">Luas Bumi<span>Kurang lebih 12.756,2 km</span></p>
-        <p class="card-umum">Massa Bumi<span>5,9736 1024 kg</span></p>
-        <p class="card-umum">Jarak dari Matahari<span>Sekitar 149.600.000 km</span></p>
-        <p class="card-umum">Satelit Alami<span>Bulan</span></p>
-        <p class="card-umum">Periode Rotasi<span>23 jam 56 menit dan 4 detik</span></p>
+body{
+  font-family: "Segoe UI", sans-serif;
+  background: url(bg.png)no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
 
-    </div>
-    <!-- <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p>
-    <p>p</p> -->
-</body>
-</html>
+.container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+}
+
+.container h2{
+  z-index: 1;
+  position: relative;
+  color: #fff;
+  font-size: 90px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 32px;
+  line-height: 60px;
+}
+
+
+.btn{
+  margin-top: 50px;
+    margin-right: 30px;
+    display: inline-block;
+  padding: 15px 50px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  /* background-color: rgb(123, 123, 184); */
+background-color:transparent;
+  /* border: none; */
+  border: 1px solid #5c7aa3;
+
+  border-radius: 15px;
+  /* box-shadow: 0 9px #2b273d; */
+  filter: drop-shadow(0 0 15px #5c7aa3) drop-shadow(0 0 50px #5c7aa3) contrast(2) brightness(2);
+  transition: .5s;
+}
+.btn:hover {
+  
+  color: #000024;
+  background-color: #5c7aa3;
+  filter: drop-shadow(0 0 20px #5c7aa3) contrast(2) brightness(2);
+}
+
+.btn:active {
+  background-color: #5c7aa3;
+  box-shadow: 0 5px #2b273d;
+  transform: translateY(4px);
+}
+
+@media (max-width:800px){
+  .container h2{
+    font-size: 60px;
+    letter-spacing: 19px;
+    line-height: 35px;
+  }
+}
+

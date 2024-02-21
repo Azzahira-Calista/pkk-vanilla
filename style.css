@@ -83,9 +83,3 @@ background-color:transparent;
     line-height: 35px;
   }
 }
-
-.btn-index{
-  position: relative;
-  z-index: 99999;
-  
-}
